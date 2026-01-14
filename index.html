@@ -18,9 +18,9 @@
             font-family: 'Noto Serif KR', serif;
         }
 
-        /* Hero Background Animation */
+        /* Hero Background Animation (Black & White Theme) */
         .hero-bg {
-            background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%);
+            background: radial-gradient(circle at center, #27272a 0%, #000000 100%);
             position: relative;
             overflow: hidden;
         }
@@ -29,8 +29,8 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             background-image: 
-                radial-gradient(at 10% 10%, rgba(59, 130, 246, 0.3) 0px, transparent 50%),
-                radial-gradient(at 90% 90%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+                radial-gradient(at 10% 10%, rgba(255, 255, 255, 0.1) 0px, transparent 50%),
+                radial-gradient(at 90% 90%, rgba(255, 255, 255, 0.05) 0px, transparent 50%);
             opacity: 0.6;
         }
 
@@ -40,32 +40,39 @@
         }
         .nav-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
         }
         
-        /* Icon Box Gradient */
+        /* Icon Box Gradient (Monochrome) */
         .icon-box {
-            background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+            background: linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%);
+        }
+        
+        /* Custom Button Hover */
+        .btn-monochrome:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-zinc-50 text-zinc-800">
 
     <!-- Navigation Bar -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-zinc-200 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <span class="text-2xl">🇰🇷</span>
-                    <span class="font-black text-xl tracking-tight text-slate-900 serif">DOKDO KOREA</span>
+                    <span class="text-2xl grayscale">🇰🇷</span>
+                    <span class="font-black text-xl tracking-tight text-black serif">DOKDO KOREA</span>
                 </div>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="01.html" class="text-slate-600 hover:text-blue-700 font-medium transition-colors">독도 게임</a>
-                    <a href="02.html" class="text-slate-600 hover:text-blue-700 font-medium transition-colors">역사 연표</a>
-                    <a href="03.html" class="text-slate-600 hover:text-blue-700 font-medium transition-colors">핵심 용어</a>
-                    <a href="04.html" class="px-4 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition-colors font-medium text-sm">의견 수렴</a>
+                    <a href="01.html" class="text-zinc-600 hover:text-black font-medium transition-colors">독도 게임</a>
+                    <a href="02.html" class="text-zinc-600 hover:text-black font-medium transition-colors">역사 연표</a>
+                    <a href="03.html" class="text-zinc-600 hover:text-black font-medium transition-colors">핵심 용어</a>
+                    <a href="04.html" class="px-5 py-2 rounded-full bg-black text-white hover:bg-zinc-800 transition-colors font-medium text-sm">의견 수렴</a>
                 </div>
             </div>
         </div>
@@ -75,23 +82,23 @@
     <header class="hero-bg min-h-[600px] flex items-center justify-center pt-16 relative">
         <div class="hero-pattern"></div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-            <div class="inline-block px-4 py-1.5 rounded-full border border-blue-400/30 bg-blue-900/40 text-blue-200 text-sm font-semibold tracking-widest mb-6 backdrop-blur-sm animate-fade-in-up">
+            <div class="inline-block px-5 py-1.5 rounded-full border border-zinc-700 bg-zinc-800/50 text-zinc-300 text-sm font-semibold tracking-widest mb-6 backdrop-blur-sm animate-fade-in-up">
                 Beautiful Island of Korea
             </div>
             <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
                 대한민국의 아침이<br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-emerald-300 italic serif">시작되는 곳, 독도</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 via-white to-zinc-400 italic serif">시작되는 곳, 독도</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
                 역사적, 지리적, 국제법적으로 명백한 대한민국의 고유 영토.<br>
                 독도의 진실된 역사와 올바른 정보를 확인하세요.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="02.html" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-bold text-lg shadow-lg shadow-blue-900/20 transition-all transform hover:scale-105">
+                <a href="02.html" class="px-8 py-4 bg-white text-black rounded-full font-bold text-lg shadow-xl shadow-white/10 transition-all transform hover:scale-105 border border-white">
                     역사 연표 보기
                 </a>
-                <a href="01.html" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-full font-bold text-lg backdrop-blur-sm transition-all">
-                    정부 정책 확인
+                <a href="01.html" class="px-8 py-4 bg-transparent hover:bg-white/10 text-white border border-zinc-600 rounded-full font-bold text-lg backdrop-blur-sm transition-all">
+                    독도 게임 하기
                 </a>
             </div>
         </div>
@@ -101,58 +108,58 @@
     <main class="max-w-7xl mx-auto px-4 py-20 -mt-20 relative z-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
-            <!-- Card 01: 정책 -->
-            <a href="01.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 group">
-                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    🏛️
+            <!-- Card 01: 게임 (Updated) -->
+            <a href="01.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-zinc-200/50 border border-zinc-100 group">
+                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
+                    🎮
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">독도 정책</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">
-                    독도에 대한 대한민국 정부의 기본 입장과 영토 수호 의지, 주요 정책 자료를 확인합니다.
+                <h3 class="text-xl font-bold text-zinc-900 mb-2 group-hover:text-black transition-colors">독도 게임</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed mb-4">
+                    퀴즈와 미니게임을 통해 독도의 역사, 지리, 자연 환경을 쉽고 재미있게 배워봅니다.
                 </p>
-                <span class="text-blue-600 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
-                    자세히 보기 <span>→</span>
+                <span class="text-black text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                    게임 시작하기 <span>→</span>
                 </span>
             </a>
 
             <!-- Card 02: 연표 -->
-            <a href="02.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 group">
-                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 bg-gradient-to-br from-amber-50 to-orange-100">
+            <a href="02.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-zinc-200/50 border border-zinc-100 group">
+                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
                     ⏳
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-amber-700 transition-colors">역사 연표</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                <h3 class="text-xl font-bold text-zinc-900 mb-2 group-hover:text-black transition-colors">역사 연표</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed mb-4">
                     조선시대부터 현대까지, 문헌과 사건으로 보는 독도 영유권의 역사적 흐름을 탐구합니다.
                 </p>
-                <span class="text-amber-600 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span class="text-black text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                     타임라인 탐색 <span>→</span>
                 </span>
             </a>
 
             <!-- Card 03: 용어 -->
-            <a href="03.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 group">
-                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 bg-gradient-to-br from-emerald-50 to-teal-100">
+            <a href="03.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-zinc-200/50 border border-zinc-100 group">
+                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
                     📚
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">핵심 용어</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                <h3 class="text-xl font-bold text-zinc-900 mb-2 group-hover:text-black transition-colors">핵심 용어</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed mb-4">
                     우산도, 칙령 41호 등 독도를 이해하기 위해 반드시 알아야 할 주요 명칭과 고문서를 정리했습니다.
                 </p>
-                <span class="text-emerald-600 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span class="text-black text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                     사전 열기 <span>→</span>
                 </span>
             </a>
 
             <!-- Card 04: 의견 -->
-            <a href="04.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 group">
-                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 bg-gradient-to-br from-purple-50 to-violet-100">
+            <a href="04.html" class="nav-card block bg-white p-8 rounded-3xl shadow-xl shadow-zinc-200/50 border border-zinc-100 group">
+                <div class="icon-box w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-black group-hover:text-white transition-all duration-300">
                     💬
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-700 transition-colors">의견 수렴</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                <h3 class="text-xl font-bold text-zinc-900 mb-2 group-hover:text-black transition-colors">의견 수렴</h3>
+                <p class="text-zinc-500 text-sm leading-relaxed mb-4">
                     독도 수호를 위한 국민 여러분의 소중한 제안과 생각을 자유롭게 나누는 공간입니다.
                 </p>
-                <span class="text-purple-600 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span class="text-black text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">
                     참여 하기 <span>→</span>
                 </span>
             </a>
@@ -162,34 +169,34 @@
 
     <!-- Info Section -->
     <section class="max-w-7xl mx-auto px-4 py-12 mb-20">
-        <div class="bg-slate-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div class="bg-zinc-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4 serif">왜 독도인가?</h2>
-                <div class="h-1 w-20 bg-blue-600 rounded-full mb-6"></div>
-                <p class="text-slate-600 leading-relaxed mb-4">
+                <h2 class="text-3xl font-bold text-zinc-900 mb-4 serif">왜 독도인가?</h2>
+                <div class="h-1 w-20 bg-black rounded-full mb-6"></div>
+                <p class="text-zinc-600 leading-relaxed mb-4">
                     독도는 동해의 맑은 숨결이자, 대한민국 주권의 상징입니다. 
                     단순한 섬을 넘어 우리의 역사와 정신이 깃든 곳입니다.
                 </p>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-zinc-600 leading-relaxed">
                     본 사이트는 올바른 역사 교육과 정보 전달을 통해 독도에 대한 관심을 높이고,
                     미래 세대에게 진실된 역사를 물려주기 위해 제작되었습니다.
                 </p>
             </div>
-            <div class="md:w-1/2 w-full h-64 bg-slate-200 rounded-2xl overflow-hidden shadow-inner relative flex items-center justify-center group">
+            <div class="md:w-1/2 w-full h-64 bg-zinc-200 rounded-2xl overflow-hidden shadow-inner relative flex items-center justify-center group">
                 <!-- Decorative Placeholder for Dokdo Image -->
-                <div class="absolute inset-0 bg-gradient-to-tr from-slate-300 to-slate-100 transition-transform duration-700 group-hover:scale-105"></div>
-                <span class="relative z-10 text-slate-400 font-bold text-lg">[독도 전경 이미지 영역]</span>
+                <div class="absolute inset-0 bg-gradient-to-tr from-zinc-300 to-zinc-100 transition-transform duration-700 group-hover:scale-105"></div>
+                <span class="relative z-10 text-zinc-400 font-bold text-lg group-hover:text-black transition-colors">[독도 전경 이미지 영역]</span>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <footer class="bg-black text-zinc-400 py-12 border-t border-zinc-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex justify-center gap-2 mb-6 text-2xl">
-                🇰🇷
+                <span class="grayscale opacity-70">🇰🇷</span>
             </div>
-            <p class="text-sm font-medium mb-2 text-slate-300">대한민국 영토 독도</p>
+            <p class="text-sm font-medium mb-2 text-zinc-300">대한민국 영토 독도</p>
             <p class="text-xs opacity-60 mb-8">
                 경상북도 울릉군 울릉읍 독도리 1-96<br>
                 Copyright © Dokdo Korea. All Rights Reserved.
