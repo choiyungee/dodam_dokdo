@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독도: 핵심 용어 사전</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Glossary Card Hover Effect */
+        .glossary-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glossary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-icon {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            color: #2563eb;
+        }
+    </style>
+    <!-- Chosen Palette: Clean Dictionary Style (Slate, Blue, White) -->
+    <!-- Content: Only Glossary (Names, Documents, People/Events) -->
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Hero -->
+    <header class="relative bg-slate-900 text-white py-16 px-4 overflow-hidden shadow-xl">
+        <!-- Home Button -->
+        <a href="index.html" class="absolute top-4 left-4 md:top-8 md:left-8 z-20 flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all text-sm font-medium border border-white/10 shadow-lg group">
+            <span class="group-hover:scale-110 transition-transform">🏠</span>
+            <span class="hidden md:inline">홈으로</span>
+        </a>
+
+        <!-- Abstract Background Pattern -->
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-500 via-slate-900 to-slate-900"></div>
+        
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <div class="inline-block mb-4 px-3 py-1 border border-blue-400/30 rounded-full bg-blue-900/30 text-blue-200 text-xs font-semibold tracking-widest uppercase">Dokdo Glossary</div>
+            <h1 class="text-3xl md:text-5xl font-black mb-6 tracking-tight leading-tight">독도 영유권 수호를 위한<br><span class="text-blue-400 font-serif italic">핵심 용어 사전</span></h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
+                독도의 역사와 진실을 이해하기 위해 반드시 알아야 할 주요 명칭, 문헌, 인물 및 사건을 정리했습니다.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- Glossary Section -->
+        <section class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-200 overflow-hidden p-8 md:p-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                
+                <!-- Category 1: Names -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b-2 border-slate-100">
+                        <div class="category-icon w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            🏷️
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">명칭 관련</h3>
+                            <p class="text-xs text-slate-400 font-medium">시대별 독도의 이름</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-blue-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">우산도 (于山島)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">삼국시대 우산국에서 유래한 독도의 옛 이름입니다. 독도가 역사적으로 오랫동안 우리의 영토였음을 보여주는 명칭입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-blue-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">석도 (石島)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">1900년 대한제국 칙령 제41호에 등장하는 이름입니다. '돌섬(독섬)'을 한자로 표기한 것으로, 독도가 울릉군의 관할임을 명확히 보여줍니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-blue-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">마쓰시마 (송도, 松島)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">과거 일본이 독도를 부르던 명칭입니다. 재미있는 점은 당시 일본은 울릉도를 '죽도(다케시마)'라고 불렀다는 사실입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-blue-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">리앙쿠르암 (Liancourt Rocks)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">1849년 프랑스 포경선 리앙쿠르호가 독도를 발견하고 붙인 서양식 명칭입니다. 국제적으로 사용되기도 합니다.</p>
+                    </div>
+                </div>
+
+                <!-- Category 2: Documents -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b-2 border-slate-100">
+                        <div class="category-icon w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shadow-sm bg-gradient-to-br from-amber-50 to-orange-100 !text-amber-600">
+                            📜
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">핵심 고문서</h3>
+                            <p class="text-xs text-slate-400 font-medium">영유권의 결정적 증거</p>
+                        </div>
+                    </div>
+
+                    <div class="glossary-card bg-amber-50/30 p-6 rounded-2xl border border-amber-100 group hover:border-amber-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-800 group-hover:text-amber-700 transition-colors">세종실록지리지</h4>
+                            <span class="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">1454</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">독도(우산)와 울릉도(무릉)가 강원도 울진현에 속하며, 날씨가 맑으면 서로 바라볼 수 있다고 기록한 조선의 관찬서입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-amber-50/30 p-6 rounded-2xl border border-amber-100 group hover:border-amber-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-800 group-hover:text-amber-700 transition-colors">은주시청합기</h4>
+                            <span class="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">1667</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">일본의 고문헌으로, 울릉도와 독도가 일본 영토 밖(조선 땅)임을 일본 스스로 기록한 최초의 문헌입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-amber-50/30 p-6 rounded-2xl border border-amber-100 group hover:border-amber-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-800 group-hover:text-amber-700 transition-colors">태정관 지령</h4>
+                            <span class="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">1877</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">일본 메이지 정부의 최고 행정기관인 태정관이 "울릉도와 독도는 일본과 관계없다"고 공식적으로 내린 지시입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-amber-50/30 p-6 rounded-2xl border border-amber-100 group hover:border-amber-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-800 group-hover:text-amber-700 transition-colors">대한제국 칙령 41호</h4>
+                            <span class="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">1900</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">고종 황제가 독도(석도)를 울릉군의 관할 구역으로 명시하여 반포한 근대 법령으로 국제법적 효력을 갖습니다.</p>
+                    </div>
+                    <div class="glossary-card bg-slate-50 p-6 rounded-2xl border border-slate-200 group hover:border-slate-400">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-600 group-hover:text-slate-800 transition-colors">시마네현 고시 40호</h4>
+                            <span class="text-xs font-bold bg-slate-200 text-slate-600 px-2 py-1 rounded">1905</span>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed">러일전쟁 중 일본이 독도를 주인이 없는 땅이라 주장하며 불법적으로 자국 영토로 편입한 고시입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-amber-50/30 p-6 rounded-2xl border border-amber-100 group hover:border-amber-300">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-lg font-bold text-slate-800 group-hover:text-amber-700 transition-colors">SCAPIN 제677호</h4>
+                            <span class="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">1946</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">제2차 세계대전 후 연합군 최고사령관이 독도를 일본의 통치권에서 제외한다고 명시한 지령입니다.</p>
+                    </div>
+                </div>
+
+                <!-- Category 3: People & Events -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 mb-6 pb-4 border-b-2 border-slate-100">
+                        <div class="category-icon w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shadow-sm bg-gradient-to-br from-red-50 to-rose-100 !text-rose-600">
+                            👥
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">인물 및 사건</h3>
+                            <p class="text-xs text-slate-400 font-medium">독도를 지킨 사람들</p>
+                        </div>
+                    </div>
+
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-rose-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-rose-600 transition-colors">안용복</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">조선 숙종 때의 어부로, 일본에 건너가 울릉도와 독도가 조선 땅임을 강력히 주장하여 일본 막부로부터 '울릉도 도해 금지령'을 이끌어냈습니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-rose-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-rose-600 transition-colors">독도의용수비대</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">1950년대 한국전쟁 혼란기에 일본의 침범을 막기 위해 홍순칠 등 민간인들이 자발적으로 결성하여 독도를 수호한 단체입니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-rose-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-rose-600 transition-colors">평화선 (이승만 라인)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">1952년 이승만 대통령이 선포한 해양 주권 선언으로, 독도를 포함한 인접 해양에 대한 주권을 명확히 했습니다.</p>
+                    </div>
+                    <div class="glossary-card bg-white p-6 rounded-2xl border border-slate-100 group hover:border-rose-200">
+                        <h4 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-rose-600 transition-colors">다케시마의 날</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">일본 시마네현이 1905년의 불법 편입을 기념하여 매년 2월 22일로 제정한 날로, 한일 갈등의 주요 원인입니다.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-slate-400 py-12 border-t border-slate-200">
+            <div class="max-w-md mx-auto">
+                <p class="text-sm font-medium mb-2">대한민국 영토 독도</p>
+                <p class="text-xs opacity-70">본 페이지는 독도 관련 핵심 용어의 이해를 돕기 위해 제작되었습니다.</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+</html>
